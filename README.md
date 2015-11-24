@@ -20,7 +20,7 @@ If you are running an Ubuntu/Debian system you can install this running:
 ```Shell
 $ sudo apt-get install python getmail4
 ```
-Move to a work directory and clone this repository and change execution permission of the files
+Move to a work directory, clone this repository and change execution permission of the files
 ```Shell
 $ sudo chmod +x imapgrab.py run.sh
 ```
