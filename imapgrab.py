@@ -2,7 +2,7 @@
 
 # IMAP Grab
 # Version 0.1.4
-ig_version_short="0.1.4"
+ig_version_short="0.1.5"
 
 # Copyleft:
 #   This program was first written by Daniel Roesler (diafygi) in
