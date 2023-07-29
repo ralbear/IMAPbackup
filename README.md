@@ -12,7 +12,7 @@ This script backup the whole messages and folders and returns a compressed file 
 
 ## Previous requirements ##
 
-- python 2.3.3 or later
+- python 2.3.3 or later, python 3.* not supported
 - getmail
 
 If you are running an Ubuntu/Debian system you can install this running:
