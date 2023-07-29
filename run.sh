@@ -17,7 +17,7 @@ do
         #create a log file
         touch backup_report.log
         #run the backup
-        ./imapgrab.py -d -v -M -f $email -s server.domain.com -p 143 -u $email -p $pass -m "_ALL_,-INBOX.Trash,-INBOX.Spam" -L manager >> $email/backup_report.log
+        python2 imapgrab.py -d -v -M -f $email -s server.domain.com -p 143 -u $email -p $pass -m "_ALL_,-INBOX.Trash,-INBOX.Spam" -L manager >> $email/backup_report.log
         #tar the backup files
         tar -czf done/$email.tar.gz $email/*
         #remove the workdir
