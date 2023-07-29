@@ -18,7 +18,7 @@ This script backup the whole messages and folders and returns a compressed file 
 If you are running an Ubuntu/Debian system you can install this running:
 
 ```Shell
-$ sudo apt-get install python getmail4
+$ sudo apt-get install python2 getmail4
 ```
 Move to a work directory, clone this repository and change execution permission of the files
 ```Shell
@@ -27,7 +27,7 @@ $ sudo chmod +x imapgrab.py run.sh
 To test the connection with the server and list the folders for an account can do this
 
 ```Shell
-$ ./imapgrab.py -l -s server.domain.com -S -p 993  -u username -p password
+$ python2 imapgrab.py -l -s server.domain.com -S -p 993  -u username -p password
 ```
 
 ## Comma separated data source ##
@@ -40,7 +40,7 @@ user2@domain.com,password2
 ## Customize server details ##
 In the line 20 of `run.sh` file we can customize some details
 ```Shell
-./imapgrab.py -d -v -M -f $email -s server.domain.com -p 143 -u $email -p $pass -m "_ALL_,-INBOX.Trash,-INBOX.Spam" -L manager >> $email/backup_report.log
+$ python2 imapgrab.py -d -v -M -f $email -s server.domain.com -p 143 -u $email -p $pass -m "_ALL_,-INBOX.Trash,-INBOX.Spam" -L manager >> $email/backup_report.log
 ```
 **mbox or maildir**
 
